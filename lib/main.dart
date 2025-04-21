@@ -17,7 +17,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amberAccent,
+      backgroundColor: const Color.fromARGB(255, 255, 178, 233),
         appBar: AppBar(
           backgroundColor: Colors.purpleAccent,
             title: Text("Home Page"),
@@ -25,14 +25,10 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child:
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.white,
-              child: Center(
-                child: Text("Hello World!"),
-      ),
-    )
-    ),);
+            ElevatedButton(
+              onPressed: (){},
+              child:Text("Click Here"),
+      )),
+    );
   }
 }
