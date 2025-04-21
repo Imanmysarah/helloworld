@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Hello World Demo Application',
       theme: ThemeData(
-        primarySwatch: const Color.fromARGB(255, 255, 76, 171),
+        primarySwatch: Colors.blue,
       ),
       home: MyHomePage(),
       );
@@ -17,12 +17,22 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          title: Text("Home Page"),
+      backgroundColor: Colors.amberAccent,
+        appBar: AppBar(
+          backgroundColor: Colors.purpleAccent,
+            title: Text("Home Page"),
+            centerTitle: true,
       ),
       body: Center(
-        child: Text('Hello World')
+        child:
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.white,
+              child: Center(
+                child: Text("Hello World!"),
       ),
-    );
+    )
+    ),);
   }
 }
