@@ -25,9 +25,8 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child:
-            ElevatedButton(
-              onPressed: (){},
-              child:Text("Click Here"),
+            Image(
+              image:NetworkImage('https://img.freepik.com/free-vector/red-beauty-butterfly-insect-icon_18591-82365.jpg?semt=ais_hybrid&w=740'),
       )),
     );
   }
