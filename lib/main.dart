@@ -23,23 +23,21 @@ import 'package:flutter/material.dart';
  backgroundColor: Colors.purpleAccent,
  centerTitle: true,
  ),
-  body: Row(
-     mainAxisAlignment: MainAxisAlignment.center,
-     crossAxisAlignment: CrossAxisAlignment.end,
+  body: ListView(
     children: [
       Container(
           color: Colors.blue,
-          width: 100,
-          height: 100,
+          width: 200,
+          height: 800,
           child: Center(
-          child: Text('BMW')),
+            child: Text('BMW')),
     ),
       Container(
           color: Colors.yellow,
-          width: 100,
-          height: 100,
+          width: 200,
+          height:800,
           child: Center(
-          child: Text('Ford')),
+            child: Text('Ford')),
         ),
  ]
  ),
