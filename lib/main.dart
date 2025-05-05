@@ -23,21 +23,28 @@ import 'package:flutter/material.dart';
  backgroundColor: Colors.purpleAccent,
  centerTitle: true,
  ),
-  body: ListView(
-    children: [
-      Container(
-          color: Colors.blue,
-          width: 200,
-          height: 800,
-          child: Center(
-            child: Text('BMW')),
-    ),
-      Container(
-          color: Colors.yellow,
-          width: 200,
-          height:800,
-          child: Center(
-            child: Text('Ford')),
+  body:  GridView(
+    gridDelegate: 
+SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4, 
+crossAxisSpacing: 10, mainAxisSpacing: 10,),
+ children: [
+    Container(
+        color: Colors.blue,
+ ),
+    Container(
+        color: Colors.yellow,
+ ),
+    Container(
+        color: Colors.pink,
+ ),
+    Container(
+        color: Colors.lime,
+ ),
+    Container(
+        color: Colors.green,
+ ),
+    Container(
+        color: Colors.orange,
         ),
  ]
  ),
